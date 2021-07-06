@@ -4,6 +4,9 @@ Here is the link for DEMO : [DEMO]()
 
 ### :fire: Curved Outside Sidebar Menu 
 
+#### Output Screenshot
+![alt text](https://raw.githubusercontent.com/shehan96/curved-outside-sidebar-menu/main/output-screenshot.png)
+
 This project is a boilerplate code written using following tech :
 
 1. `HTML`

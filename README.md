@@ -1,7 +1,6 @@
 #### :star: Demo
 
-Here is the link for DEMO :
-![DEMO]()
+Here is the link for DEMO : [DEMO]()
 
 ### :fire: Curved Outside Sidebar Menu 
 

@@ -5,7 +5,7 @@ Here is the link for DEMO : [DEMO](https://curved-outside-sidebar-menu.vercel.ap
 ### :fire: Curved Outside Sidebar Menu 
 
 #### Output Screenshot
-![alt text](https://raw.githubusercontent.com/shehan96/curved-outside-sidebar-menu/main/output-screenshot.png)
+![alt text](https://raw.githubusercontent.com/shehan96/curved-outside-sidebar-menu/main/output-screenshot.png =50x)
 
 This project is a boilerplate code written using following tech :
 

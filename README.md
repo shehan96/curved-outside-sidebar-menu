@@ -18,8 +18,8 @@ This project creates a sidebar menu with curved outside effect in active tabs.
 
 Here are the other libraries used in this project :
 
-1. ![Icons](https://themes-pixeden.com/font-demos/7-stroke/)
-2. ![Fonts](https://fonts.google.com/specimen/Montserrat)
+1. [Icons](https://themes-pixeden.com/font-demos/7-stroke/)
+2. [Fonts](https://fonts.google.com/specimen/Montserrat)
 
 #### :question: How to use
 

@@ -12,17 +12,23 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* side bar styles */
 .sidebar{
     position: fixed;
     top: 20px;
     left: 20px;
     bottom: 20px;
-    width: 300px;
+    width: 60px;
     border-radius: 10px;
     box-sizing: initial;
     border-left: 5px solid #a200ca;
     background: #a200ca;
     transition: width 0.5s;
+    overflow-x: hidden;
+}
+
+.sidebar.active{
+    width: 300px;
 }
 
 .sidebar .list{
@@ -50,6 +56,51 @@ body{
     background: #fafafa69;
 }
 
+.sidebar .list .list-item b:nth-child(1){
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+.sidebar .list .list-item b:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #a200ca;
+}
+
+.sidebar .list .list-item b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+.sidebar .list .list-item b:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #a200ca;
+}
+
+.sidebar .list .list-item.active b:nth-child(1),
+.sidebar .list .list-item.active b:nth-child(2){
+    display: block;
+}
+
 .sidebar .list .list-item.active .list-item-link{
     color: #000;
 }
@@ -66,13 +117,14 @@ body{
 .sidebar .list .list-item .list-item-link .icon{
     position: relative;
     display: block;
+    min-width: 60px;
     width: 60px;
     height: 60px;
     line-height: 60px;
     text-align: center;
 }
 
-.icon{
+.icon i{
     font-size: 1.5rem;
     font-weight: 900 !important;
 }
@@ -84,4 +136,40 @@ body{
     height: 60px;
     line-height: 60px;
     white-space: normal;
+}
+
+/* toggle button styles */
+
+.toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #a200ca;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle.active{
+    background: #4300ca;
+}
+
+.toggle i{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #fff !important;
+    display: none;
+    position: absolute;
+}
+
+.toggle i.open,.toggle.active i.close{
+    display: block;
+}
+
+.toggle.active i.open, .toggle i.close{
+    display: none;
 }
